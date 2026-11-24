@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F6FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EmotionAI"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#273469"
+            android:layout_marginTop="35dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AI Facial Expression Classification"
+            android:textSize="14sp"
+            android:textColor="#777777"
+            android:layout_marginTop="8dp"/>
+
+        <ImageView
+            android:id="@+id/imagePreview"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:layout_marginTop="40dp"
+            android:background="#E1E5EF"
+            android:scaleType="centerCrop"
+            android:contentDescription="Selected face image"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select an image to analyze"
+            android:textColor="#555555"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/btnCamera"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Open Camera"
+            android:textAllCaps="false"
+            android:layout_marginTop="25dp"/>
+
+        <Button
+            android:id="@+id/btnGallery"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Choose from Gallery"
+            android:textAllCaps="false"
+            android:layout_marginTop="12dp"/>
+
+        <Button
+            android:id="@+id/btnAnalyze"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Analyze Expression"
+            android:textAllCaps="false"
+            android:enabled="false"
+            android:layout_marginTop="12dp"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

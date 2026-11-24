@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#F4F6FB">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EmotionAI Results"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#202A44"
+        android:layout_marginBottom="24dp"/>
+
+    <ImageView
+        android:id="@+id/resultImage"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Analyzed face"/>
+
+    <TextView
+        android:id="@+id/emotionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expression"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#3446A0"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/confidenceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confidence: 0%"
+        android:textSize="18sp"
+        android:layout_marginTop="12dp"/>
+
+    <Button
+        android:id="@+id/btnAnalyzeAgain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Analyze Another Image"
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>
